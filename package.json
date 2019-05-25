@@ -1,71 +1,22 @@
 {
-  "name": "tablesorter",
-  "title": "tablesorter",
-  "version": "2.31.1",
-  "description": "tablesorter (FORK) is a jQuery plugin for turning a standard HTML table with THEAD and TBODY tags into a sortable table without page refreshes. tablesorter can successfully parse and sort many types of data including linked data in a cell.",
-  "author": {
-    "name": "Christian Bach",
-    "url": "http://tablesorter.com/"
+  "name": "ok-sort",
+  "version": "1.1.1",
+  "description": "A pure JavaScript solution to make HTML Tables sortable",
+  "main": "sort-table.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "maintainers": [
-    {
-      "name": "Rob Garrison",
-      "url": "https://github.com/Mottie",
-      "email": "wowmotty@gmail.com"
-    }
-  ],
-  "license": "(MIT OR GPL-2.0)",
-  "homepage": "https://mottie.github.io/tablesorter/",
-  "bugs": "https://github.com/Mottie/tablesorter/issues",
-  "docs": "https://mottie.github.io/tablesorter/docs/index.html",
-  "demo": "https://github.com/Mottie/tablesorter/wiki",
-  "dependencies": {
-    "jquery": ">=1.2.6"
-  },
-  "keywords": [
-    "table",
-    "sort",
-    "sorting",
-    "alphanumeric",
-    "natural",
-    "jquery-plugin"
-  ],
-  "main": "dist/js/jquery.tablesorter.combined.js",
-  "files": [
-    "dist/"
-  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Mottie/tablesorter.git"
+    "url": "git+https://github.com/stationer/SortTable.git"
   },
-  "scripts": {
-    "authors": "bash testing/authors.sh",
-    "eslint": "eslint --color Gruntfile.js js/jquery.tablesorter.js js/parsers/* js/widgets/*"
-  },
-  "npmName": "tablesorter",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "dist/**/*",
-        "css/*",
-        "js/**/*"
-      ]
-    }
+  "keywords": [
+    "Sort"
   ],
-  "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-cli": "^1.3.2",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-jshint": "^2.0.0",
-    "grunt-contrib-qunit": "^3.0.1",
-    "grunt-contrib-uglify": "^4.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-htmlhint": "^0.9.13",
-    "grunt-jscs": "^3.0.1",
-    "grunt-string-replace": "^1.3.1"
-  }
+  "author": "Tyler Uebele",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stationer/SortTable/issues"
+  },
+  "homepage": "https://github.com/stationer/SortTable#readme"
 }
