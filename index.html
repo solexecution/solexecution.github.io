@@ -2,15 +2,13 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Demo for sort-table.js</title>
+    <title>Solexecution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="sort-table.js"></script>
     <style type="text/css">
         table { border: 1px solid black; border-collapse: collapse; }
-
         th, td { padding: 2px 5px; border: 1px solid black; }
-
         thead { background: #ddd; }
-
         table#demo2.js-sort-0 tbody tr td:nth-child(1),
         table#demo2.js-sort-1 tbody tr td:nth-child(2),
         table#demo2.js-sort-2 tbody tr td:nth-child(3),
@@ -21,9 +19,8 @@
         table#demo2.js-sort-7 tbody tr td:nth-child(8),
         table#demo2.js-sort-8 tbody tr td:nth-child(9),
         table#demo2.js-sort-9 tbody tr td:nth-child(10) {
-            background: #dee;
+            background: rgb(221, 238, 225);
         }
-
     </style>
 </head>
 <body>
@@ -33,53 +30,7 @@
 
 <section id="body">
  
-    <h2>Basic Usage</h2>
-    
-    <table class="js-sort-table" id="demo1">
-      
-        <thead>
-        <tr>
-            <th class="js-sort-number">Row</th>
-            <th>Strings</th>
-            <th class="js-sort-date">Dates</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>Shoe</td>
-            <td>9/11/2001</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Twine</td>
-            <td>12/7/1941</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Thread</td>
-            <td>1/20/2008</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Rope</td>
-            <td>9/17/1862</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Yarn</td>
-            <td>8/6/1945</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Nylon</td>
-            <td>7/4/1776</td>
-        </tr>
-        </tbody>
-    </table>
-
     <h2>Advanced Styling</h2>
-   
     <table class="js-sort-table" id="demo2">
         <tr>
             <td class="js-sort-number">Row</td>
@@ -101,41 +52,9 @@
             <td>js-sort-desc</td>
             <td>Likewise, this indicates descending sort</td>
         </tr>
-        <tr>
-            <td>4</td>
-            <td>js-sort-0</td>
-            <td>The zero-based number of the sorted column</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>js-sort-string</td>
-            <td>By default, string sorting is used, making this optional</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>js-sort-date</td>
-            <td>When applied to a cell in the header, column will be interpreted as dates</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>js-sort-number</td>
-            <td>This tells sort-table to treat the column as numbers</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>js-sort-last</td>
-            <td>Set this class to a TH to sort by the last word in each cell</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>js-sort-input</td>
-            <td>If your table has form inputs, this allows sorting by their value</td>
-        </tr>
-    </table>
+</table>
     
 </section>
 
-<footer>
-</footer>
 </body>
 </html>
