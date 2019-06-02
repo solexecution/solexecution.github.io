@@ -28,21 +28,15 @@
 </head>
 <body>
 <header>
-    <h1>Demo for sort-table.js</h1>
+    <h1>Solexecution</h1>
 </header>
 
-
 <section id="body">
-    <p><b>sort-table.js</b> is a pure JavaScript (no dependencies) solution
-        to make HTML Tables sortable.</p>
-
+ 
     <h2>Basic Usage</h2>
-    <p>The basic table sorting functionality can be added simply by
-        including <b>sort-table.js</b> anywhere in your document and adding
-        CSS class 'js-sort-table' to all tables you want sortable.
-        It works like this:</p>
+    
     <table class="js-sort-table" id="demo1">
-        <caption>&lt;table class="js-sort-table"&gt;</caption>
+      
         <thead>
         <tr>
             <th class="js-sort-number">Row</th>
@@ -139,88 +133,6 @@
         </tr>
     </table>
     
-    <h2>Advanced Sorting</h2>
-   <form>
-        <table class="js-sort-table" id="demo3">
-            <thead>
-            <tr>
-                <th colspan="2">Multi-row</th>
-                <th colspan="4">headers use the last row</th>
-            </tr>
-            <tr>
-                <th class="js-sort-number" title="class=&quot;js-sort-number&quot;">number</th>
-                <th class="js-sort-number" title="class=&quot;js-sort-number&quot;">number</th>
-                <th class="js-sort-string" title="class=&quot;js-sort-string&quot;">string (default)</th>
-                <th class="js-sort-date" title="class=&quot;js-sort-date&quot;">date</th>
-                <th class="js-sort-last" title="class=&quot;js-sort-last&quot;">last</th>
-                <th class="js-sort-input" title="class=&quot;js-sort-input&quot;">input</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><a href="#f">1</a></td>
-                <td>123</td>
-                <td>Shoe</td>
-                <td>9/11/2001</td>
-                <td>John Doe</td>
-                <td><input type="text" size="6" name="a" value="What"/></td>
-            </tr>
-            <tr>
-                <td><a href="#e">2</a></td>
-                <td>21</td>
-                <td>Twine</td>
-                <td>12/7/1941</td>
-                <td>John Q Public</td>
-                <td><input type="text" size="6" name="ab" value="are"/></td>
-            </tr>
-            <tr>
-                <td><a href="#g">3</a></td>
-                <td>3</td>
-                <td>Thread</td>
-                <td>1/20/2008</td>
-                <td>John Smith</td>
-                <td><input type="text" size="6" name="c" value="six"/></td>
-            </tr>
-            <tr>
-                <td><a href="#q">4</a></td>
-                <td>42</td>
-                <td>Rope</td>
-                <td>9/17/1862</td>
-                <td>Joe T Plumber</td>
-                <td><input type="text" size="6" name="d" value="types"/></td>
-            </tr>
-            <tr>
-                <td><a href="#z">5</a></td>
-                <td>58</td>
-                <td>Yarn</td>
-                <td>8/6/1945</td>
-                <td>John</td>
-                <td><input type="text" size="6" name="e" value="of"/></td>
-            </tr>
-            <tr>
-                <td><a href="#a">6</a></td>
-                <td>6</td>
-                <td>Nylon</td>
-                <td>7/4/1776</td>
-                <td>John Johnson</td>
-                <td><input type="text" size="6" name="f" value="input?"/></td>
-            </tr>
-            </tbody>
-        </table>
-
-        <p>Manual calls to tableSort can be made, </p>
-        <ul>
-            <li>such as this one that sorts descending by the second column:
-                <button onclick="sortTable(document.getElementById('demo3'), 1, -1);"><code>sortTable(Table, 1,
-                    -1);</code></button>
-            </li>
-            <li>or this one that re-sorts the table in the event that something else adjusted it:
-                <button onclick="sortTable(document.getElementById('demo3'));"><code>sortTable(Table);</code>
-                </button>
-            </li>
-        </ul>
-    </form>
-
 </section>
 
 <footer>
