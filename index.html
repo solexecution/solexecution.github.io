@@ -45,7 +45,20 @@
             background: rgb(221, 238, 225);
         }
     
-    body {background-image: url(Background.jpg);}
+    body {background-image: url(background.jpg);}
+* {
+margin:0;
+padding:0;
+}
+#nav ul {
+list-style-type:none;
+display:none; /* hides all sub menus descendant of UL of id = nav */
+}
+#nav li {
+float:left; /* makes menus to appear side by side */
+position:relative;
+width:12em; /* for FLOAT elements width is must */
+}
     </style>
 </head>
 
@@ -64,29 +77,12 @@
         
                     <nav class="main-nav">
                         <div class="nav-wrapper">
-                            <ul class="cf">
-                                 <li class="index-collection active-link folder">
-                                  <a href="/"><span>&nbsp;</span></a>
-                                </li>
-                                <li class="external-link">
-                                    <a href="/sign-up"><span>Subscribe</span></a>
-                                </li>
-                                <li class="external-link">
-                                    <a href="/suncast-episodes"><span>Listen</span></a>
-                                </li>
-                                <li class="external-link">
-                                    <a href="/support-suncast"><span>Rate & Review</span></a>
-                                </li>
-                                <li class="external-link">
-                                    <a href="/sponsors"><span>Sponsors</span></a>
-                                </li>
-                                <li class="page-collection">
-                                     <a href="/coaching-application"><span>Work with Me</span></a>
-                                    </li>
-                                <li class="external-link">
-                                    <a href="/member"><span>Become a member</span></a>
-                                </li>
-                            </ul>
+                                <ul id=”nav”>
+                                        <li><a href=”#”>0. Home</a></li>
+                                        <li><a href=”#”>1. L1- (upto 3 level sub menu will be under it)</a></li>
+                                        <li><a href=”#”>2. Level-1</a></li>
+                                        <li><a href=”#”>3. L1-(upto 4 level sub menu will be under it)</a></li>
+                                        </ul>
                         </div>
                     </nav>
         
