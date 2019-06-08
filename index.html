@@ -53,7 +53,6 @@ background-repeat: repeat;
 background-size: cover;
 
 }
-
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -80,7 +79,7 @@ background-size: cover;
 }
 
 .topnav .icon {
-  display: none;
+  display: flex;
 }
 
 @media screen and (max-width: 600px) {
@@ -109,13 +108,56 @@ background-size: cover;
 
 <body>
         <header id="header">
-                <h1 data-content-field="site-title" class="site-title">
-                    <a href="/" id="top">
+                <h3 data-content-field="site-title" class="site-title">
+                    <a href="https://solexecution.com/" id="top">
                         <img src="logo.png" width="200" height="80" alt="SolExecution" />
-        
+                        <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 29, 2019 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = 'Change is only constant, jump in  '+ days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "JUMP NOW";
+  }
+}, 1000);
+</script>
+  
                     </a>
-                </h1>
-                <a class="icon-menu" id="mobileMenu"></a>
+                   
+                </h3>           
+            </header>
+                     <h2 id="about">About me</h2>
+            
+                    Data evangelist and business profesional on them mission to provide actionable insights on a plate in one day. 
+                    Always thrive with difficult problems on tight deadlines. Heavy focus on shippable deliverables. Never afraid to upend conventions. 
+            </br>
+                    I volunteer to help professionals in Renewables industry to identify quick wins, better ways and eliminate operational bottlenecks using your greatest asset - available data - 
+                    in exchange for experience and opportunity to boost the industry and do what is right.
+                    
+                
+                <!-- <a class="icon-menu" id="mobileMenu"></a>
                 <div class="topnav" id="myTopnav">
                         <a href="#contact">The Mission</a>
                         <a href="#about">About Me</a>
@@ -124,15 +166,17 @@ background-size: cover;
                         </a>
                       </div>
             </div>
-        </header>
-    <section id="body">
+        -->
 
-        <h2>Powering Revolution at Silverstone in coming days will be 137 organisations, Fully Charged Live 2019 is going to be bigger as Robert mentioned</h2>
+        <section id="body">
+
+
+        <h2><a href="https://www.fullychargedshow.co.uk/fully-charged-live-2019" target="_blank">Fully Charged Live 2019</a> is bigger and better, checkout list below</h2>
         <table class="js-sort-table" id="demo2">
             <tr>
                 <td>Website</td>
                 <td>Description</td>
-                <td>[]</td>
+                <td>Category</td>
             </tr>
 <tr><td><a href="https://alfen.com/en" target="_blank">Alfen</a></td><td>Energy storage systems</td><td></td></tr>
 <tr><td><a href="https://arrival.com/" target="_blank">Arrival</a></td><td>The Smart Electric Van</td><td></td></tr>
@@ -274,29 +318,11 @@ background-size: cover;
         <!-- <iframe width="600" height="510" src="https://datastudio.google.com/embed/reporting/0B5FF6JBKbNJxQ1hMRzRiVDlobVU/page/jR7H" frameborder="0" style="border:0" allowfullscreen></iframe>-->
     </section>
 
-    <h2 id="about">What about me?</h2>
+          
+<div>
+    <iframe src="https://e.infogram.com/4f06a527-3458-46e9-b18b-1a815a0887da?src=embed" title="Live Dashboard - GB Electricity Mix" width="1020" height="1650" scrolling="no" frameborder="0" style="border:none;" allowfullscreen="allowfullscreen"></iframe>
 
-    <div>
-        <pre>
-        a
-        dsf
-        asdf
-        ads
-        fads
-        fasd
-        f
-        asdf
-        saf
-        sad
-        fsa
-        df
-        sadf
-        asd
-        fsda
-
-        saf
-    </pre>
-    </div>
+</div>
 
 </body>
 
