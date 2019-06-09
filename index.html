@@ -103,6 +103,27 @@ background-size: cover;
     text-align: left;
   }
 }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
 </style>
 </head>
 
@@ -112,6 +133,17 @@ background-size: cover;
                     <a href="https://solexecution.com/" id="top">
                         <img src="logo.png" width="200" height="80" alt="SolExecution" />
                         <p id="demo"></p>
+                        
+                <a class="icon-menu" id="mobileMenu"></a>
+                <div class="topnav" id="myTopnav">
+                        <a href="#contact">Mission</a>
+                        <a href="#about">About Me</a>
+                        <a href="#reading">Books</a>
+                        <a href="#chart">GB Energy</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
 
 <script>
 // Set the date we're counting down to
@@ -133,7 +165,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = 'Change is only constant, jump in  '+ days + "d " + hours + "h "
+  document.getElementById("demo").innerHTML = 'Shift happens -  '+ days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
@@ -148,29 +180,62 @@ var x = setInterval(function() {
                    
                 </h3>           
             </header>
-                     <h2 id="about">About me</h2>
-            
-                    Data evangelist and business profesional on them mission to provide actionable insights on a plate in one day. 
-                    I always thrive with difficult problems on tight deadlines. Heavy focus on shippable deliverables. Never afraid to upend conventions. 
-            </br>
-                    I volunteer to help professionals in Renewables industry to identify quick wins, better ways and eliminate operational bottlenecks using your greatest asset - available data - 
-                    in exchange for experience and opportunity to boost the industry and do what is right.
-                </br>
-            </br>   
-                    Ready for action, please get in touch via <a href="mailto:solexecution@gmail.com">email</a>.
-                
-                <!-- <a class="icon-menu" id="mobileMenu"></a>
-                <div class="topnav" id="myTopnav">
-                        <a href="#contact">The Mission</a>
-                        <a href="#about">About Me</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                          <i class="fa fa-bars"></i>
-                        </a>
-                      </div>
-            </div>
-        -->
+<h2 id="mission">Mission</h2>
 
-        <section id="body">
+Mission is simple - get it done.
+
+<h2 id="about">About me</h2>
+
+Data evangelist and business profesional on them mission to provide actionable insights on a plate in one day.
+I always thrive with difficult problems on tight deadlines and am never afraid to upend conventions.
+</br>
+With heavy focus on shippable deliverables I volunteer to help professionals in Renewables industry to identify quick
+wins, better ways and eliminate operational bottlenecks using your greatest asset - available data -
+in exchange for experience and opportunity to boost the industry and do what is right.
+</br>
+Ready for action, please get in touch via <a href="mailto:solexecution@gmail.com">email</a>.
+
+</div>
+
+<h2 id="reading">You are what you read</h2>
+
+<iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
+    src="https://read.amazon.co.uk/kp/card?asin=B00CDCHWKO&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
+<iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
+    src="https://read.amazon.co.uk/kp/card?asin= B07MBPN72G&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
+<iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
+    src="https://read.amazon.co.uk/kp/card?asin= B004E3X9ZC&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
+
+<h2 id="chart"></h2>
+
+<iframe src="https://e.infogram.com/4f06a527-3458-46e9-b18b-1a815a0887da?src=embed"
+    title="Live Dashboard - GB Electricity Mix" width="800" height="1430" scrolling="no" frameborder="0"
+    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+
+    
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+            <!-- <section id="body">
+
 
 
         <h2><a href="https://www.fullychargedshow.co.uk/fully-charged-live-2019" target="_blank">Fully Charged Live 2019</a> is bigger and better, checkout list below</h2>
@@ -318,13 +383,9 @@ var x = setInterval(function() {
 <tr><td><a href="http://www.zoom-ev.com/" target="_blank">Zoom EV</a></td><td>The UK’s first and only peer-to-peer car sharing platform for low emission vehicles</td><td></td></tr>
  </table>
         <!-- <iframe width="600" height="510" src="https://datastudio.google.com/embed/reporting/0B5FF6JBKbNJxQ1hMRzRiVDlobVU/page/jR7H" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-    </section>
+    </section> -->
 
           
-<div>
-    <iframe src="https://e.infogram.com/4f06a527-3458-46e9-b18b-1a815a0887da?src=embed" title="Live Dashboard - GB Electricity Mix" width="1020" height="1650" scrolling="no" frameborder="0" style="border:none;" allowfullscreen="allowfullscreen"></iframe>
-
-</div>
 
 </body>
 
