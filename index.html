@@ -3,15 +3,15 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141541634-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141541634-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-141541634-1');
-</script>
-<link rel="icon" type="image/png"  href="favicon.png">
+        gtag('config', 'UA-141541634-1');
+    </script>
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta charset='utf-8'>
     <title>Solexecution</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" target="_blank">
@@ -44,197 +44,220 @@
         table#demo2.js-sort-9 tbody tr td:nth-child(10) {
             background: rgb(221, 238, 225);
         }
-    
-    body, html {
-  height: 100%;
-  background-image: url(background.jpg);
-background-position: center;
-background-repeat: repeat;
-background-size: cover;
 
-}
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+        body,
+        html {
+            height: 100%;
+            background-image: url(background.jpg);
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+        }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-.topnav .icon {
-  display: flex;
-}
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
+        .topnav .icon {
+            display: flex;
+        }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
 
-#myBtn:hover {
-  background-color: #555;
-}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
 
-</style>
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 
 <body>
-        <header id="header">
-                <h3 data-content-field="site-title" class="site-title">
-                    <a href="https://solexecution.com/" id="top">
-                        <img src="logo.png" width="200" height="80" alt="SolExecution" />
-                        <p id="demo"></p>
-                        
+    <header id="header">
+        <h3 data-content-field="site-title" class="site-title">
+            <a href="https://solexecution.com/" id="top">
+                <img src="logo.png" width="200" height="80" alt="SolExecution" />
+                <p id="demo"></p>
+
                 <a class="icon-menu" id="mobileMenu"></a>
                 <div class="topnav" id="myTopnav">
-                        <a href="#contact">Mission</a>
-                        <a href="#about">About Me</a>
-                        <a href="#reading">Books</a>
-                        <a href="#chart">GB Energy</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                          <i class="fa fa-bars"></i>
-                        </a>
-                      </div>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("July 29, 2019 12:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = 'Shift happens -  '+ days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "JUMP NOW";
-  }
-}, 1000);
-</script>
-  
+                    <a href="#contact">Mission</a>
+                    <a href="#about">About Me</a>
+                    <a href="#services">Services</a>
+                    <a href="#reading">Books</a>
+                    <a href="#chart">GB Energy</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
                     </a>
-                   
-                </h3>           
-            </header>
-<h2 id="mission">Mission</h2>
+                </div>
 
-Mission is simple - get it done.
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("July 29, 2019 12:00:00").getTime();
 
-<h2 id="about">About me</h2>
+                    // Update the count down every 1 second
+                    var x = setInterval(function () {
 
-Data evangelist and business profesional on them mission to provide actionable insights on a plate in one day.
-I always thrive with difficult problems on tight deadlines and am never afraid to upend conventions.
-</br>
-With heavy focus on shippable deliverables I volunteer to help professionals in Renewables industry to identify quick
-wins, better ways and eliminate operational bottlenecks using your greatest asset - available data -
-in exchange for experience and opportunity to boost the industry and do what is right.
-</br>
-Ready for action, please get in touch via <a href="mailto:solexecution@gmail.com">email</a>.
+                        // Get today's date and time
+                        var now = new Date().getTime();
 
-</div>
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
 
-<h2 id="reading">You are what you read</h2>
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-<iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
-    src="https://read.amazon.co.uk/kp/card?asin=B00CDCHWKO&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
-<iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
-    src="https://read.amazon.co.uk/kp/card?asin= B07MBPN72G&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
-<iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
-    src="https://read.amazon.co.uk/kp/card?asin= B004E3X9ZC&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
+                        // Output the result in an element with id="demo"
+                        document.getElementById("demo").innerHTML = 'Shift happens -  ' + days + "d " + hours + "h "
+                            + minutes + "m " + seconds + "s ";
 
-<h2 id="chart"></h2>
+                        // If the count down is over, write some text 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "JUMP NOW";
+                        }
+                    }, 1000);
+                </script>
 
-<iframe src="https://e.infogram.com/4f06a527-3458-46e9-b18b-1a815a0887da?src=embed"
-    title="Live Dashboard - GB Electricity Mix" width="800" height="1430" scrolling="no" frameborder="0"
-    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+            </a>
 
-    
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </h3>
+    </header>
+    <h2 id="mission">Mission</h2>
 
-<script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    Mission is simple - get it done.
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
+    <h2 id="about">About me</h2>
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+    Data evangelist and business profesional on them mission to provide actionable insights on a plate in one day.
+    I always thrive with difficult problems on tight deadlines and am never afraid to upend conventions.
+    </br>
+    With heavy focus on shippable deliverables I volunteer to help professionals in Renewables industry to identify
+    quick
+    wins, better ways and eliminate operational bottlenecks using your greatest asset - available data -
+    in exchange for experience and opportunity to boost the industry and do what is right.
+    </br>
+    Ready for action, please get in touch via <a href="mailto:solexecution@gmail.com">email</a>.
 
-            <!-- <section id="body">
+
+    <h2 id="services">Services</h2>
+
+    <ul> 
+        <li>Data anything</li>
+        <ul>
+        <li>Analysis</li>
+        <li>Cleansing</li>
+        <li>Enhancement</li>
+        <li>Reporting</li>
+        <li>Consultancy</li>
+        </ul>
+        <li>Repetitive tasks automation</li>
+    </ul>
+
+    <h3 id="reading">You are what you read, I am currently reading <a href="https://www.linkedin.com/in/mikebernerslee/">Mike Berner Lee books</a></h3>
+
+    <iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
+        src="https://read.amazon.co.uk/kp/card?asin=B00CDCHWKO&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
+    <iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
+        src="https://read.amazon.co.uk/kp/card?asin= B07MBPN72G&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
+    <iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
+        src="https://read.amazon.co.uk/kp/card?asin= B004E3X9ZC&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_Jxx.CbJWVPMRX"></iframe>
+
+    <h3 id="chart">Amazing insights on GB grid from renewables industry profesional - <a href="https://www.infratec.co.nz/about-us/your-team/dr-andrew-crossland-ceng">Dr Andrew Crossland CEng.</a></h3>
+
+    <iframe src="https://e.infogram.com/4f06a527-3458-46e9-b18b-1a815a0887da?src=embed"
+        title="Live Dashboard - GB Electricity Mix" width="800" height="1430" scrolling="no" frameborder="0"
+        style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- <section id="body">
 
 
 
@@ -385,7 +408,7 @@ function topFunction() {
         <!-- <iframe width="600" height="510" src="https://datastudio.google.com/embed/reporting/0B5FF6JBKbNJxQ1hMRzRiVDlobVU/page/jR7H" frameborder="0" style="border:0" allowfullscreen></iframe>-->
     </section> -->
 
-          
+
 
 </body>
 
