@@ -8,20 +8,37 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-141541634-1');
     </script>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta charset='utf-8'>
     <title>Solexecution</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" target="_blank">
-    <script type="text/javascript" src="sort-table.js" target="_blank"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+if (annyang) {
+  // Add our commands to annyang
+  annyang.addCommands({
+    'hello': function() { alert('Hello world!'); }
+  });
+
+  // Tell KITT to use annyang
+  SpeechKITT.annyang();
+
+  // Define a stylesheet for KITT to use
+  SpeechKITT.setStylesheet('//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/themes/flat.css');
+
+  // Render KITT's interface
+  SpeechKITT.vroom();
+</script>
+
     <style type="text/css" target="_blank">
+
         table {
             border: 1px solid black;
             border-collapse: collapse;
         }
-
         th,
         td {
             padding: 2px 5px;
@@ -44,22 +61,20 @@
         table#demo2.js-sort-9 tbody tr td:nth-child(10) {
             background: rgb(221, 238, 225);
         }
-
         body,
         html {
             height: 100%;
             background-image: url(background.jpg);
-            background-position: center;
+            background-position: fixed;
             background-repeat: repeat;
-            background-size: cover;
-
+            background-size: 100%;
         }
-
         .topnav {
             overflow: hidden;
             background-color: #333;
+            
+  /* position: fixed; */
         }
-
         .topnav a {
             float: left;
             display: block;
@@ -332,6 +347,7 @@
                     <a href="#about">About Me</a>
                     <a href="#services">Services</a>
                     <a href="#reading">Books</a>
+                    <a href="#listen">Podcasts</a>
                     <a href="#chart">GB Energy</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
@@ -379,16 +395,12 @@
 
     <h2 id="about">About me</h2>
 
-    Data evangelist and business profesional on them mission to provide actionable insights on a plate in one day.
-    I always thrive with difficult problems on tight deadlines and am never afraid to upend conventions.
+    Data evangelist and business professional on them mission to provide actionable insights on a plate.
     </br>
-    With heavy focus on shippable deliverables I volunteer to help professionals in Renewables industry to identify
-    quick
-    wins, better ways and eliminate operational bottlenecks using your greatest asset - available data -
+    With heavy focus on shippable deliverables I volunteer to help Cleantech companies and professionals to identify quick wins and eliminate operational bottlenecks using your greatest asset - available data -
     in exchange for experience and opportunity to boost the industry and do what is right.
     </br>
     Ready for action, please get in touch via <a href="mailto:solexecution@gmail.com">email</a>.
-
 
     <h2 id="services">Services</h2>
 >>>>>>> 7fcc2fd6de9b724d0666a528d01f91a7ee8c8a59
@@ -404,7 +416,14 @@
         </ul>
         <li>Repetitive tasks automation</li>
     </ul>
+    
+    <h3 id="listen">Great listen and motivator, ideal for commute or jogging</h3>
 
+    <ul>
+    <li>Industry veteran <strong>David Hunt</strong> - podcast <a href="http://thisweekincleantech.com/"><strong>thisweekincleantech</strong></a>.</li>
+    <li>Solar energy executive <strong>Nico Johnson</strong> podcast for solar warriors <a href="https://www.mysuncast.com/"><strong>mysuncast</strong></a>.</li>
+    </ul>
+    
     <h3 id="reading">You are what you read, I am currently reading <a href="https://www.linkedin.com/in/mikebernerslee/">Mike Berner Lee books</a></h3>
 
     <iframe type="text/html" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%"
@@ -441,159 +460,6 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-
-    <!-- <section id="body">
-
-
-
-        <h2><a href="https://www.fullychargedshow.co.uk/fully-charged-live-2019" target="_blank">Fully Charged Live 2019</a> is bigger and better, checkout list below</h2>
-        <table class="js-sort-table" id="demo2">
-            <tr>
-                <td>Website</td>
-                <td>Description</td>
-                <td>Category</td>
-            </tr>
-<tr><td><a href="https://alfen.com/en" target="_blank">Alfen</a></td><td>Energy storage systems</td><td></td></tr>
-<tr><td><a href="https://arrival.com/" target="_blank">Arrival</a></td><td>The Smart Electric Van</td><td></td></tr>
-<tr><td><a href="https://www.benchmarkminerals.com/" target="_blank">Benchmark Minerals Intelligence</a></td><td>PRICE ASSESSMENTS & MARKET INTELLIGENCE FOR LITHIUM ION BATTERY, ELECTRIC VEHICLE & ENERGY STORAGE SUPPLY CHAINS.</td><td></td></tr>
-<tr><td><a href="https://thebiglemon.com" target="_blank">Big Lemon</a></td><td>Our mission is to enable everyone to get around their community in an affordable, enjoyable and environmentally-sustainable way</td><td></td></tr>
-<tr><td><a href="http://www.bloova.com/" target="_blank">Bloova</a></td><td>A company which focuses on reducing pollution, assist with reducing commuting costs and increase local footfall for all types of businesses.</td><td></td></tr>
-<tr><td><a href="https://www.bmw.co.uk/model-types/electric?gclid=" target="_blank">BMW</a></td><td>BMW ELECTRIC CARS. The future has begun.</td><td></td></tr>
-<tr><td><a href="https://bookmycharge.com/" target="_blank">Bookmycharge</a></td><td>the bookable EV charging community</td><td></td></tr>
-<tr><td><a href="https://bpchargemaster.com/" target="_blank">BP Chargemaster</a></td><td>Electric Vehicle Charging Solutions</td><td></td></tr>
-<tr><td><a href="https://www.calvincapital.com/" target="_blank">Calvin Capital</a></td><td>funding the digital energy revolution</td><td></td></tr>
-<tr><td><a href="https://chargebound.com/" target="_blank">Chargebound</a></td><td>Join the zero emission movement with electric vehicle transport and green renewable energy</td><td></td></tr>
-<tr><td><a href="https://www.chargedev.co.uk/" target="_blank">Charged EV</a></td><td>Electric Car Charging Experts</td><td></td></tr>
-<tr><td><a href="https://www.cleevelyev.co.uk/home/" target="_blank">Cleevely Electric Vehicles</a></td><td>EV rent/reseller</td><td></td></tr>
-<tr><td><a href="https://www.connectedkerb.com/" target="_blank">Connected Kerb</a></td><td>Connecting Electric Vehicles with power and data.</td><td></td></tr>
-<tr><td><a href="https://crowd-charge.com/" target="_blank">CrowdCharge</a></td><td>Vehicle to Grid EV Charging Balancing the grid</td><td></td></tr>
-<tr><td><a href="https://www.d-risk.net/" target="_blank">D-Risk</a></td><td>Expert-led Energy Efficiency Partners We offer simple and effective solutions for a sustainable energy system.</td><td></td></tr>
-<tr><td><a href="https://www.drive-electric.co.uk/" target="_blank">DriveElectric</a></td><td>A world where cars go hand in hand with the environment</td><td></td></tr>
-<tr><td><a href="https://www.drivenairport.com" target="_blank">Driven Global</a></td><td>The UK’s first all-⁠electric airport shuttle</td><td></td></tr>
-<tr><td><a href="http://www.drivenergy.uk/" target="_blank">Drivenergy (Mennekes)</a></td><td>Smarter recharging solutions for Electric Vehicles - at home, at work and at destinations, using energy from photovoltaic solar panels or other renewable generation.</td><td></td></tr>
-<tr><td><a href="http://www.google.co.uk/#q=DryCycle" target="_blank">DryCycle</a></td><td>not easy to find</td><td></td></tr>
-<tr><td><a href="http://ecocarsnorthampton.com/" target="_blank">Eco Cars</a></td><td>Economical Cars - With an Economical Price - Lets Go Eco</td><td></td></tr>
-<tr><td><a href="https://www.ecoplugg.co.uk/" target="_blank">EcoPlugg</a></td><td>Vehicle Charging Point installation service</td><td></td></tr>
-<tr><td><a href="https://www.ecotricity.co.uk/" target="_blank">Ecotricity</a></td><td>Power your home with green energy</td><td></td></tr>
-<tr><td><a href="https://www.edfenergy.com" target="_blank">EDF Energy</a></td><td>UK’s largest producer of low-carbon electricity, the biggest supplier of electricity by volume in Great Britain and the largest supplier to British businesses</td><td></td></tr>
-<tr><td><a href="https://www.electralink.co.uk/" target="_blank">ElectraLink</a></td><td>UK's Electricity Distribution Network Operators (DNOs) to provide an independent, secure and low-cost service to transfer data between the participants in the deregulated UK electricity market.</td><td></td></tr>
-<tr><td><a href="https://www.electricclassiccars.co.uk/" target="_blank">Electric Classic Cars</a></td><td>convert your classic to electric, source and build an electric classic to your specifications, or supply you with the parts you'd need to convert your own car to electric.</td><td></td></tr>
-<tr><td><a href="https://www.electriczoo.co.uk/" target="_blank">Electric Zoo</a></td><td>electric-only, innovative car supplier based in Coventry</td><td></td></tr>
-<tr><td><a href="https://www.enelx.com/en" target="_blank">Enel X</a></td><td>Energy Cloud Platform</td><td></td></tr>
-<tr><td><a href="https://engenie.co.uk/" target="_blank">Engenie</a></td><td>Cleaner transport for cleaner air Convenient rapid charging for zero-emission vehicles</td><td></td></tr>
-<tr><td><a href="http://www.englishelectricmotorco.com/" target="_blank">English Electric Motor Co.</a></td><td>All Electric zero dealer</td><td></td></tr>
-<tr><td><a href="https://www.ensotyres.com/" target="_blank">Enso Tyres</a></td><td>SUSTAINABLE TYRES FOR ELECTRICAL VEHICLES</td><td></td></tr>
-<tr><td><a href="https://envisionvirginracing.com/" target="_blank">Envision Virgin Racing</a></td><td>Formula E</td><td></td></tr>
-<tr><td><a href="https://erachampionship.com/" target="_blank">ERA Championship</a></td><td>An all-electric formula championship with the goal to innovate on track</td><td></td></tr>
-<tr><td><a href="http://www.google.co.uk/#q=eSmart Networks" target="_blank">eSmart Networks</a></td><td>Charging - Delivering the Electric Vehicle Revolution</td><td></td></tr>
-<tr><td><a href="https://www.eunomia.co.uk/" target="_blank">Eunomia</a></td><td>independent consultancy dedicated to helping our clients to achieve better environmental and commercial outcomes</td><td></td></tr>
-<tr><td><a href="http://www.google.co.uk/#q=EV Outlook" target="_blank">EV Outlook</a></td><td>not easy to find</td><td></td></tr>
-<tr><td><a href="https://evhire.co/" target="_blank">EV Rent</a></td><td>Supercar Hire Redefined</td><td></td></tr>
-<tr><td><a href="https://www.evezy.co.uk/" target="_blank">EVEZY</a></td><td>All-inclusive electric car subscriptions from £289 a month</td><td></td></tr>
-<tr><td><a href="https://www.evrent.co.uk/" target="_blank">EVision Electric Car Hire</a></td><td>EVision Electric Car Hire - the UK’s Premier Electric Car Hire Company</td><td></td></tr>
-<tr><td><a href="https://evchargingsolutions.co.uk/" target="_blank">eVolt</a></td><td>UK’s leading innovators in commercial & domestic electric vehicle charging solutions including intelligent energy storage</td><td></td></tr>
-<tr><td><a href="https://rebellion.earth/" target="_blank">Extinction Rebellion</a></td><td>exactly what it says</td><td></td></tr>
-<tr><td><a href="https://fastned.nl/en/" target="_blank">FastNed</a></td><td>Superfast charging</td><td></td></tr>
-<tr><td><a href="https://www.flit.bike/" target="_blank">Flit</a></td><td>lightweight electric folding bike</td><td></td></tr>
-<tr><td><a href="https://www.fullycharged.com/" target="_blank">Fully Charged (Bike Shop) Fully Charged Show Store</a></td><td>Electric bikes</td><td></td></tr>
-<tr><td><a href="http://www.gb-sol.co.uk/" target="_blank">GB-Sol</a></td><td>manufacturing solar PV modules and mounting systems</td><td></td></tr>
-<tr><td><a href="http://www.givenergy.co.uk/" target="_blank">Givenergy</a></td><td>Helping achieve grid neutrality</td><td></td></tr>
-<tr><td><a href="https://gocycle.com/" target="_blank">GoCycle</a></td><td>Electric bikes</td><td></td></tr>
-<tr><td><a href="https://www.goodenergy.co.uk/" target="_blank">Good Energy</a></td><td>Clean power is one of the biggest ways to tackle climate change</td><td></td></tr>
-<tr><td><a href="https://www.greencarguide.co.uk/" target="_blank">Green Car Guide</a></td><td>information to consumers about the latest green cars in the UK in a quality, informed and engaging way.</td><td></td></tr>
-<tr><td><a href="https://www.gridserve.com/" target="_blank">GRIDSERVE</a></td><td>Cutting edge sustainable energy solutions for critical power infrastructure</td><td></td></tr>
-<tr><td><a href="https://www.hevra.org.uk/" target="_blank">HEVRA</a></td><td>Service and Repair for your Electric or Hybrid car</td><td></td></tr>
-<tr><td><a href="https://www.hms-networks.com/" target="_blank">HMS Industrial Networks</a></td><td>The number one choice for industrial communication HMS Networks is the leading independent supplier of solutions for industrial communication and the Industrial Internet of Things, IIoT.</td><td></td></tr>
-<tr><td><a href="http://www.google.co.uk/#q=Home Charge" target="_blank">Home Charge</a></td><td>not easy to find</td><td></td></tr>
-<tr><td><a href="https://hyperionsearch.co.uk/" target="_blank">Hyperion Executive Search</a></td><td>talent acquisition in cleantech</td><td></td></tr>
-<tr><td><a href="http://icewind.is/en/" target="_blank">IceWind</a></td><td>Wind turbines</td><td></td></tr>
-<tr><td><a href="https://www.indra.co.uk/" target="_blank">Indra Renewable Technologies</a></td><td>electric vehicle and smart energy technology company developing innovative charging and energy storage solutions for the home, with additional capabilities in vehicle electrification and upgrades.</td><td></td></tr>
-<tr><td><a href="http://www.google.co.uk/#q=Iron Mill Hydro" target="_blank">Iron Mill Hydro</a></td><td>not easy to find</td><td></td></tr>
-<tr><td><a href="http://www.google.co.uk/#q=It’s Electric" target="_blank">It’s Electric</a></td><td>not easy to find</td><td></td></tr>
-<tr><td><a href="https://www.jaguarlandrover.com/" target="_blank">Jaguar Land Rover</a></td><td>good old Jag got electric</td><td></td></tr>
-<tr><td><a href="https://www.jaltek.com/sectors/clean-energy" target="_blank">Jaltek</a></td><td>Helping make clean energy mainstream</td><td></td></tr>
-<tr><td><a href="https://www.jojusolar.co.uk/" target="_blank">Joju Solar</a></td><td>independent experts in solar energy,  battery storage and electric car charging points</td><td></td></tr>
-<tr><td><a href="https://www.kia.com/uk/kia-eco-cars/?" target="_blank">Kia</a></td><td>Kia electric</td><td></td></tr>
-<tr><td><a href="https://home.kpmg" target="_blank">KPMG</a></td><td>one of the BIG4</td><td></td></tr>
-<tr><td><a href="https://www.lexautolease.co.uk/personal" target="_blank">Lex Autolease</a></td><td>LEASING COMPANY</td><td></td></tr>
-<tr><td><a href="https://lifesizemedia.com/" target="_blank">Life Size Media</a></td><td>We are the champions of cleantech.</td><td></td></tr>
-<tr><td><a href="https://lightyear.one/" target="_blank">Lightyear</a></td><td>Developing the electric car that charges itself plugging in your EV unnecessary if you park it outside</td><td></td></tr>
-<tr><td><a href="https://www.lowcvp.org.uk/" target="_blank">Low CVP</a></td><td>public-private partnership that exists to accelerate a sustainable shift to lower carbon, cleaner vehicles and fuels and create opportunities for UK businesses. Over 200 organisations are engaged, representing diverse viewpoints.</td><td></td></tr>
-<tr><td><a href="https://www.lv.com/" target="_blank">LV Insurance</a></td><td>Insurance</td><td></td></tr>
-<tr><td><a href="http://www.google.co.uk/#q=Mainpipe" target="_blank">Mainpipe</a></td><td>not easy to find</td><td></td></tr>
-<tr><td><a href="https://megni.co.uk/" target="_blank">MEGNI</a></td><td>Energy Monitoring</td><td></td></tr>
-<tr><td><a href="https://www.moixa.com/" target="_blank">Moixa</a></td><td>Moixa is the UK’s leading smart battery company. We develop our Smart Battery hardware and GridShare software to facilitate smart energy storage and sharing.</td><td></td></tr>
-<tr><td><a href="https://motochimp.com/" target="_blank">Motochimp</a></td><td>From the get go, the Motochimp was designed to inject fresh energy into your perception, experiences and impulses. Designed to redefine urban mobility, the Motochimp opens your eyes to the surreal in everyday spaces, as you meander through streets and dreamscapes.</td><td></td></tr>
-<tr><td><a href="https://www.mygreenpod.com/" target="_blank">My Green Pod</a></td><td>ndependent, family-run UK business, founded by Katie Hill and Jarvis Smith. We want to share the real stories behind the brands and people working tirelessly to offer ethical alternatives to mainstream products and services.</td><td></td></tr>
-<tr><td><a href="https://myenergi.com/" target="_blank">Myenergi</a></td><td>Award-winning renewable energy products, made in Britain</td><td></td></tr>
-<tr><td><a href="https://nakedsolar.co.uk/" target="_blank">Naked Solar</a></td><td>solar installer</td><td></td></tr>
-<tr><td><a href="https://www.nationalgrid.com/" target="_blank">National Grid</a></td><td>electricity and natural gas delivery company that supplies energy</td><td></td></tr>
-<tr><td><a href="http://www.newelectric.nl/" target="_blank">New Electric</a></td><td>developing high power electric and hybrid drivetrains for vehicles and boats</td><td></td></tr>
-<tr><td><a href="https://newmotion.com" target="_blank">New Motion</a></td><td>Complete charging solutions for businesses and drivers at work, home and on the go</td><td></td></tr>
-<tr><td><a href="https://www.nextgreencar.com/" target="_blank">Next Green Car</a></td><td>the buyers guide to economical and environmentally-friendly cars</td><td></td></tr>
-<tr><td><a href="https://www.nissan.co.uk" target="_blank">Nissan</a></td><td>Nissan electric</td><td></td></tr>
-<tr><td><a href="https://nonplasticbeach.com/" target="_blank">Non-Plastic Beach</a></td><td>turning tide on plastic waste</td><td></td></tr>
-<tr><td><a href="https://www.novoinsurance.co.uk/" target="_blank">Novo Insurance</a></td><td>We offer first-class services for sports, prestige and electric vehicles, insurance for home and business and exclusive cover for Tesla vehicles</td><td></td></tr>
-<tr><td><a href="https://www.octopusev.com/" target="_blank">Octopus Electric Vehicles</a></td><td>Beat the charge by upgrading to an electric vehicle, or just find out more</td><td></td></tr>
-<tr><td><a href="https://octopus.energy/" target="_blank">Octopus Energy</a></td><td>We're doing energy better — for you and for the environment</td><td></td></tr>
-<tr><td><a href="https://onehome.org.uk/" target="_blank">One Home</a></td><td>One Home is here to EMPOWER you to switch to a low carbon lifestyle, SUPPORT you to make informed choices to reduce carbon emissions and CONNECT you to the huge community of people making decisions right now that can save our One Home, now and for the future</td><td></td></tr>
-<tr><td><a href="https://openenergymonitor.org/" target="_blank">OpenEnergyMonitor</a></td><td>Open source monitoring for understanding energy Exploring the context of renewable energy and zero carbon</td><td></td></tr>
-<tr><td><a href="https://oscarandhamish.com/" target="_blank">Oscar & Hamish</a></td><td>British born and bred fashion and accessory label with a strong architectural design background.</td><td></td></tr>
-<tr><td><a href="https://personalelectrictransport.co.uk/" target="_blank">Personal Electric Transport</a></td><td>Lightweight, clean and efficient, electric scooters have revolutionized personal transport in cities across the world. E-scooters provide a range of 10-60 miles and easily keep pace with urban traffic. They are small enough to carry on to public transport and can be stored under a desk at work.</td><td></td></tr>
-<tr><td><a href="https://www.peugeot.co.uk" target="_blank">Peugeot</a></td><td>Peugeot electric</td><td></td></tr>
-<tr><td><a href="https://www.phoenixcontact.com" target="_blank">Phoenix Contact</a></td><td>is a manufacturer of industrial automation, interconnection, and interface solutions</td><td></td></tr>
-<tr><td><a href="https://thephoenixworks.com/" target="_blank">Phoenix Works</a></td><td>Enabling a zero carbon future</td><td></td></tr>
-<tr><td><a href="https://www.powersolutionsuk.com/" target="_blank">Powered Solutions</a></td><td>We are an independent energy consultant providing the best solutions to power UK based businesses. We invest in our people and build strong relationships with our partners and suppliers</td><td></td></tr>
-<tr><td><a href="https://powerquad.co.uk/" target="_blank">Powerquad</a></td><td>Designed to reduce your electricity bills by maximising access to cheaper energy. Storing solar or low cost tariff electricity from the grid, to use when and how you need it most.All controlled via our handy App</td><td></td></tr>
-<tr><td><a href="https://www.powervault.co.uk/" target="_blank">Powervault</a></td><td>STORE ENERGY Powervault 3 helps you reduce your energy bills by storing free solar energy or cheap energy from the grid.</td><td></td></tr>
-<tr><td><a href="https://purepla.net/" target="_blank">Pure Planet</a></td><td>NO NUKES, NO COAL, NO FRACKING 100% renewable electricity 100% carbon offset gas Our renewable electricity is from the sun, wind and water, and it's cheaper than power that pollutes. All our gas is carbon offset at no additional cost to you. Our Members are helping move Britain towards a sustainable future.</td><td></td></tr>
-<tr><td><a href="https://www.qwestenergy.co.uk/" target="_blank">Qwest</a></td><td>Qwest Energy Local energy with profits reinvested in Cheshire West & Chester</td><td></td></tr>
-<tr><td><a href="https://www.rsymons.co.uk/" target="_blank">R Symons Ltd</a></td><td>EV specialist</td><td></td></tr>
-<tr><td><a href="http://www.orkney.gov.uk/OIC-News/285m-ReFLEX-Orkney-project-to-create-a-smart-energy-island.htm" target="_blank">ReFLEX Orkney Project</a></td><td>Orkneg Islands - smart energy island</td><td></td></tr>
-<tr><td><a href="https://www.regen.co.uk/" target="_blank">Regen</a></td><td>Regen is a not-for-profit centre of energy expertise and market insight whose mission is to transform the world’s energy systems for a zero carbon future.</td><td></td></tr>
-<tr><td><a href="https://www.renault.co.uk/vehicles/electric.html" target="_blank">Renault</a></td><td>Renault electric</td><td></td></tr>
-<tr><td><a href="https://www.rzoc.club/" target="_blank">Renault Zoe Owners’ Club</a></td><td>Europe's Largest FREE! Electric Vehicle Owners Club</td><td></td></tr>
-<tr><td><a href="https://www.r-e-a.net/" target="_blank">Renewable Energy Association</a></td><td>The voice of the renewables industry in the UK</td><td></td></tr>
-<tr><td><a href="https://www.renewableuk.com/" target="_blank">Renewable UK</a></td><td>RenewableUK members are building our future energy system, powered by clean electricity.</td><td></td></tr>
-<tr><td><a href="https://www.rexel.co.uk/" target="_blank">Rexel</a></td><td>Rexel UK is an electrical distributor connecting electricians, contractors and industrial organisations with the best electrical products, site supplies and solutions. We carry wide ranges from the UK’s leading suppliers, from lighting a…</td><td></td></tr>
-<tr><td><a href="https://www.rippleenergy.com/" target="_blank">Ripple Energy</a></td><td>It’s your power. Own it. Your clean energy future starts here</td><td></td></tr>
-<tr><td><a href="https://www.riversimple.com/" target="_blank">Riversimple</a></td><td>Hydrogen fuel cell car - To pursue, systematically, the elimination of the environmental impact of personal transport</td><td></td></tr>
-<tr><td><a href="https://www.rivian.com/" target="_blank">RIVIAN</a></td><td>Electric truck & SUV</td><td></td></tr>
-<tr><td><a href="https://www.rolec.net/" target="_blank">Rolec</a></td><td>EV Charging, Renewables end to end solutions</td><td></td></tr>
-<tr><td><a href="https://www.shell.com" target="_blank">Shell</a></td><td>We are a global group of energy and petrochemical companies with an average of 86,000 employees in more than 70 countries. We use advanced technologies and take an innovative approach to help build a sustainable energy future.</td><td></td></tr>
-<tr><td><a href="https://smartrenewableheat.com/" target="_blank">Smart Renewable Heat</a></td><td>The UK’s Leading Heat Pump Installer</td><td></td></tr>
-<tr><td><a href="www.smart.com/uk/" target="_blank">smart UK</a></td><td>Smart electric</td><td></td></tr>
-<tr><td><a href="https://www.solarplants.org.u" target="_blank">Solar Plants</a></td><td>Solar installer</td><td></td></tr>
-<tr><td><a href="https://www.solaredge.com/" target="_blank">SolarEdge</a></td><td>A Global Leader in Smart Energy Technology</td><td></td></tr>
-<tr><td><a href="https://www.solidcstore.org/" target="_blank">Solid Carbon Storage</a></td><td>At Solid Carbon Storage we do something completely different... unlike anybody else. We remove CO2 from the atmosphere - reversing the damage we cause.</td><td></td></tr>
-<tr><td><a href="https://sonnenbatterie.co.uk/" target="_blank">Sonnen</a></td><td>The sonnenBatterie is not just a battery, it's an intelligent storage system that automatically adjusts the energy usage in your household. In combination with solar panels the sonnenBatterie will enable you to supply yourself with clean energy – thus making you independent and protecting you from energy price hikes.</td><td></td></tr>
-<tr><td><a href="http://www.stratfordenergy.co.uk/" target="_blank">Stratford Energy</a></td><td>solar panel installers, renewable energy and electrical contracting.</td><td></td></tr>
-<tr><td><a href="https://www.sunamp.com/" target="_blank">Sunamp</a></td><td>thermal energy storage</td><td></td></tr>
-<tr><td><a href="https://www.swarco.com" target="_blank">Swarco</a></td><td>You encounter us every day on the roads of our planet. Our products, systems, services and turnkey solutions make travel safe and convenient for people on the move. In the spirit of SWARCO founder Manfred Swarovski we pride ourselves in being agile, innovative, reliable and trustworthy; and will not hesitate to go the extra mile for you.</td><td></td></tr>
-<tr><td><a href="https://www.tesla.com/" target="_blank">TESLA</a></td><td>Tesla - how it all started</td><td></td></tr>
-<tr><td><a href="https://teslamotorsclub.com/" target="_blank">Tesla Owners’ Club</a></td><td>Tesla cowboys/cowgirls club</td><td></td></tr>
-<tr><td><a href="https://www.theracingbug.co.uk/" target="_blank">The Racing Bug</a></td><td>COMPETITIVE, INTERACTIVE, ENTERTAINMENT REAL RACING ENTERTAINMENT TO HIRE FOR EVENTS</td><td></td></tr>
-<tr><td><a href="https://www.tonikenergy.com/products/" target="_blank">Tonik Energy</a></td><td>lectricity & gas doesn't have to cost the Earth…switch to Tonik for renewable energy* and award-winning customer service. And, we'll help halve your energy bills with next generation solar and in-home battery technologies.</td><td></td></tr>
-<tr><td><a href="https://transportevolved.com/" target="_blank">Transport Evolved</a></td><td>EV news</td><td></td></tr>
-<tr><td><a href="https://www.ubitricity.co.uk/" target="_blank">Ubitricity</a></td><td>EV charging infrastructure</td><td></td></tr>
-<tr><td><a href="https://warwick.ac.uk/" target="_blank">University of Warwick</a></td><td>uni</td><td></td></tr>
-<tr><td><a href="https://urbanebikes.com/" target="_blank">Urban Ebikes</a></td><td>Ebike, emoped shop</td><td></td></tr>
-<tr><td><a href="http://www.varta.com/" target="_blank">Varta</a></td><td>A leading expert in battery technologies and energy storage solutions</td><td></td></tr>
-<tr><td><a href="http://vivarail.co.uk/" target="_blank">VivaRail</a></td><td>Electric trains</td><td></td></tr>
-<tr><td><a href="https://www.weareev.co.uk" target="_blank">We are EV</a></td><td>EV seller</td><td></td></tr>
-<tr><td><a href="https://www.webasto.com/uk/" target="_blank">Webasto</a></td><td>EV charging solutions</td><td></td></tr>
-<tr><td><a href="https://www.wessexecoenergy.com/" target="_blank">Wessex Eco Energy</a></td><td>Solar installer</td><td></td></tr>
-<tr><td><a href="https://what3words.com/" target="_blank">What 3 Words</a></td><td>3 word GPS</td><td></td></tr>
-<tr><td><a href="https://warwick.ac.uk/fac/sci/wmg/about/" target="_blank">WMG</a></td><td>Uni</td><td></td></tr>
-<tr><td><a href="https://www.zap-map.com/" target="_blank">Zap Map</a></td><td>Zap-Map is the UK’s leading charging point platform with over 80,000 cross-platform visitors each month. The charging point map, available on the desktop and iOS/Android apps, helps electric vehicle (EV) drivers to locate available charge points, plan routes and to share updates with the community.</td><td></td></tr>
-<tr><td><a href="http://www.google.co.uk/#q=Zappi" target="_blank">Zappi</a></td><td>EV Chargers</td><td></td></tr>
-<tr><td><a href="https://www.zeromotorcycles.com/eu/" target="_blank">Zero Motorcycles</a></td><td>E motor bikes</td><td></td></tr>
-<tr><td><a href="http://www.zoom-ev.com/" target="_blank">Zoom EV</a></td><td>The UK’s first and only peer-to-peer car sharing platform for low emission vehicles</td><td></td></tr>
- </table>
-        <!-- <iframe width="600" height="510" src="https://datastudio.google.com/embed/reporting/0B5FF6JBKbNJxQ1hMRzRiVDlobVU/page/jR7H" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-    </section> -->
-
-
 
 </body>
 
