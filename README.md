@@ -1,29 +1,83 @@
-sort-table
-==========
+# Stage 1: Definition
 
-A pure JavaScript (no dependencies) solution to make HTML
-Tables sortable
+Project background.
 
+## Step 1: Description.
 
-Usage
-=====
+Define project goals and objectives.
 
-Include sort-table.js anywhere in your page, it runs on load.  
-Add CSS class 'js-sort' to all tables you want sortable.  
-Optionally include sort-table.css (or its contents) in your styles.  
+## Step 2: Discretion.
 
+List potential setbacks.
 
-Support
-=======
+# Stage 2: Data
 
-Tested successfully in FireFox Win/Mac.  
-Tested successfully in Chrome Win/Mac.  
-Tested successfully in Safari Win/Mac.  
-Tested successfully in Internet Explorer 10.  
+Manipulation and analysis.
 
+## Step 3: Download.
 
-License
-=======
+Collect the data.
 
-Released under MIT license, see included LICENSE.txt
-or http://opensource.org/licenses/MIT
+## Step 4: Distill.
+
+Preprocess and tidy data.
+
+## Step 5: Discovery.
+
+Perform exploratory analysis.
+
+## Step 6: Dissection.
+
+Additional data manipulation.
+
+## Step 7: Division.
+
+Split the data for modeling.
+
+# Stage 3: Development
+
+Modeling and prediction.
+
+## Step 8: Dry Run.
+
+Training set on a few different models.
+
+## Step 9: Decision.
+
+Validation set to choose the best model.
+
+## Step 10: Divination.
+
+Test set to evaluation model performance.
+
+# Stage 4: Deployment
+
+Production and distribution.
+
+## Step 11: Demo.
+
+Demonstrate model performance.
+
+## Step 12: Distribution.
+
+Deploy model to production.
+
+# Stage 5: Discussion
+
+Recap and reflection.
+
+## Step 13: Determination.
+
+Review the final model.
+
+## Step 14: Difficulties.
+
+Discuss challenges and obstacles.
+
+## Step 15: Directions.
+
+Opportunities for future research.
+
+## Step 16: Disseminate.
+
+Resources for more information.
