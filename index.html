@@ -15,23 +15,7 @@
     <title>Solexecution</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" target="_blank">
     
-    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-<script>
-if (annyang) {
-  // Add our commands to annyang
-  annyang.addCommands({
-    'hello': function() { alert('Hello world!'); }
-  });
-
-  // Tell KITT to use annyang
-  SpeechKITT.annyang();
-
-  // Define a stylesheet for KITT to use
-  SpeechKITT.setStylesheet('//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/themes/flat.css');
-
-  // Render KITT's interface
-  SpeechKITT.vroom();
-</script>
+   
 
     <style type="text/css" target="_blank">
 
@@ -162,8 +146,6 @@ if (annyang) {
                     <a href="#contact">Mission</a>
                     <a href="#about">About Me</a>
                     <a href="#services">Services</a>
-                    <a href="#reading">Books</a>
-                    <a href="#listen">Podcasts</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -189,7 +171,7 @@ if (annyang) {
     <h2 id="services">Services</h2>
 
     <ul> 
-        <li>Data anything</li>
+        <li>Data</li>
         <ul>
         <li>Analysis</li>
         <li>Cleansing</li>
@@ -199,14 +181,7 @@ if (annyang) {
         </ul>
         <li>Repetitive tasks automation</li>
     </ul>
-    
-    <h3 id="listen">Great listen and motivator, ideal for commute or jogging</h3>
-
-    <ul>
-    <li>Industry veteran <strong>David Hunt</strong> - podcast <a href="http://thisweekincleantech.com/"><strong>thisweekincleantech</strong></a>.</li>
-    <li>Solar energy executive <strong>Nico Johnson</strong> podcast for solar warriors <a href="https://www.mysuncast.com/"><strong>mysuncast</strong></a>.</li>
-    </ul>
-    
+        
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <script>
