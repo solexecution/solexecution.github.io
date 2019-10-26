@@ -33,12 +33,13 @@ body {
     color: #fff;
     font-size: 22px;
     line-height: 80px;
-    padding: 0 6em;
+    padding: 0 1em;
 }
 
 .menu {
     float: right;
     line-height: 50px;
+    margin: 0 6em;
 }
 
 .menu ul {
@@ -54,5 +55,19 @@ body {
     color: #fff;
     font-size: 16px;
     font-weight: lighter;
+    padding: 0 2em;
 
+}
+
+header {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header h1 {
+    color:#fff;
+    font-size:50px;
 }
