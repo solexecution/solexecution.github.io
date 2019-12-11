@@ -29,11 +29,14 @@ body {
 
 .logo {
     letter-spacing: 10px;
-    float: left;
+    /* float: left; */
     color: #fff;
-    font-size: 22px;
+    font-size: 28px;
     line-height: 80px;
-    padding: 0 2em;
+    /* padding: 0 2em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
@@ -69,18 +72,18 @@ body {
 
 .header h1 {
     color:#fff;
-    font-size:50px;
+    font-size:45px;
 }
 
 .header h2 {
     color:rgb(255, 255, 255);
-    font-size:35px;
+    font-size:30px;
     padding: 0 0 0 0;
 }
 
 .header button {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: lighter;
     padding: 12px 32px;
     border: none;
