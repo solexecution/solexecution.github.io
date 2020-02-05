@@ -30,7 +30,7 @@ body {
 .logo {
     letter-spacing: 10px;
     /* float: left; */
-    color: #fff;
+    color: #ffe;
     font-size: 28px;
     line-height: 80px;
     /* padding: 0 2em; */
@@ -55,7 +55,7 @@ body {
 
 .menu ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffe;
     font-size: 16px;
     font-weight: lighter;
     padding: 0 2em;
@@ -71,7 +71,7 @@ body {
 }
 
 .header h1 {
-    color:#fff;
+    color:#ffe;
     font-size:45px;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .header button {
-    color: #fff;
+    color: #ffe;
     font-size: 18px;
     font-weight: lighter;
     padding: 12px 32px;
