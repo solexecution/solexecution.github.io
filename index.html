@@ -1,147 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Solexecution</title>
-        <style>
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Solexecution</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #bada55;
+            width: 100%;
+            height: 100wh;
+        }
+
+        #logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+        }
+
+        #logo path:nth-child(1) {
+            stroke-dasharray: 533px;
+            stroke-dashoffset: 533px;
+            animation: line-anim 2s ease forwards;
+        }
+
+        #logo path:nth-child(2) {
+            stroke-dasharray: 303px;
+            stroke-dashoffset: 303px;
+            animation: line-anim 2s ease forwards 0.2s;
+        }
+
+        #logo path:nth-child(3) {
+            stroke-dasharray: 329px;
+            stroke-dashoffset: 329px;
+            animation: line-anim 2s ease forwards 0.2s;
+        }
+
+        #logo path:nth-child(4) {
+            stroke-dasharray: 526px;
+            stroke-dashoffset: 526px;
+            animation: line-anim 2s ease forwards 2.5s;
+        }
+
+        #logo path:nth-child(5) {
+            stroke-dasharray: 511px;
+            stroke-dashoffset: 511px;
+            animation: line-anim 2s ease forwards 2.5s;
+        }
+
+        #logo path:nth-child(6) {
+            stroke-dasharray: 527px;
+            stroke-dashoffset: 527px;
+            animation: line-anim 2s ease forwards 2.5s;
+        }
+
+        #logo path:nth-child(7) {
+            stroke-dasharray: 505px;
+            stroke-dashoffset: 505px;
+            animation: line-anim 2s ease forwards 2.5s;
+        }
+
+        #logo path:nth-child(8) {
+            stroke-dasharray: 501px;
+            stroke-dashoffset: 501px;
+            animation: line-anim 2s ease forwards 0.2s;
+        }
+
+        #logo path:nth-child(9) {
+            stroke-dasharray: 400px;
+            stroke-dashoffset: 400px;
+            animation: line-anim 2s ease forwards 0.2s;
+        }
+
+        #logo path:nth-child(10) {
+            stroke-dasharray: 232px;
+            stroke-dashoffset: 232px;
+            animation: line-anim 2s ease forwards 0.2s;
+        }
+
+        #logo path:nth-child(11) {
+            stroke-dasharray: 303px;
+            stroke-dashoffset: 303px;
+            animation: line-anim 2s ease forwards 0.2s;
+        }
+
+        #logo path:nth-child(12) {
+            stroke-dasharray: 606px;
+            stroke-dashoffset: 606px;
+            animation: line-anim 2s ease forwards 0.2s;
+        }
+
+        @keyframes line-anim {
+            to {
+                stroke-dashoffset: 0;
             }
+        }
+    </style>
+</head>
 
-            body {
-                background-color: #bada55;
-                width: 100%;
-                height: 100wh;
-            }
-
-            #logo {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                height: auto;
-            }
-
-            #logo path:nth-child(1) {
-                stroke-dasharray: 533px;
-                stroke-dashoffset: 533px;
-                animation: line-anim 2s ease forwards;
-            }
-
-            #logo path:nth-child(2) {
-                stroke-dasharray: 303px;
-                stroke-dashoffset: 303px;
-                animation: line-anim 2s ease forwards 0.2s;
-            }
-
-            #logo path:nth-child(3) {
-                stroke-dasharray: 329px;
-                stroke-dashoffset: 329px;
-                animation: line-anim 2s ease forwards 0.2s;
-            }
-
-            #logo path:nth-child(4) {
-                stroke-dasharray: 526px;
-                stroke-dashoffset: 526px;
-                animation: line-anim 2s ease forwards 2.5s;
-            }
-
-            #logo path:nth-child(5) {
-                stroke-dasharray: 511px;
-                stroke-dashoffset: 511px;
-                animation: line-anim 2s ease forwards 2.5s;
-            }
-
-            #logo path:nth-child(6) {
-                stroke-dasharray: 527px;
-                stroke-dashoffset: 527px;
-                animation: line-anim 2s ease forwards 2.5s;
-            }
-
-            #logo path:nth-child(7) {
-                stroke-dasharray: 505px;
-                stroke-dashoffset: 505px;
-                animation: line-anim 2s ease forwards 2.5s;
-            }
-
-            #logo path:nth-child(8) {
-                stroke-dasharray: 501px;
-                stroke-dashoffset: 501px;
-                animation: line-anim 2s ease forwards 0.2s;
-            }
-
-            #logo path:nth-child(9) {
-                stroke-dasharray: 400px;
-                stroke-dashoffset: 400px;
-                animation: line-anim 2s ease forwards 0.2s;
-            }
-
-            #logo path:nth-child(10) {
-                stroke-dasharray: 232px;
-                stroke-dashoffset: 232px;
-                animation: line-anim 2s ease forwards 0.2s;
-            }
-
-            #logo path:nth-child(11) {
-                stroke-dasharray: 303px;
-                stroke-dashoffset: 303px;
-                animation: line-anim 2s ease forwards 0.2s;
-            }
-
-            #logo path:nth-child(12) {
-                stroke-dasharray: 606px;
-                stroke-dashoffset: 606px;
-                animation: line-anim 2s ease forwards 0.2s;
-            }
-
-            @keyframes line-anim {
-                to {
-                    stroke-dashoffset: 0;
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-
-
+<body>
+    <header>
         <svg id="logo" width="1000" height="116" viewBox="0 0 1023 116" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M42.0781 63.3672C30.5 60.0391 22.0625 55.9609 16.7656 51.1328C11.5156 46.2578 8.89062 40.2578 8.89062 33.1328C8.89062 25.0703 12.1016 18.4141 18.5234 13.1641C24.9922 7.86719 33.3828 5.21875 43.6953 5.21875C50.7266 5.21875 56.9844 6.57812 62.4688 9.29688C68 12.0156 72.2656 15.7656 75.2656 20.5469C78.3125 25.3281 79.8359 30.5547 79.8359 36.2266H66.2656C66.2656 30.0391 64.2969 25.1875 60.3594 21.6719C56.4219 18.1094 50.8672 16.3281 43.6953 16.3281C37.0391 16.3281 31.8359 17.8047 28.0859 20.7578C24.3828 23.6641 22.5312 27.7188 22.5312 32.9219C22.5312 37.0938 24.2891 40.6328 27.8047 43.5391C31.3672 46.3984 37.3906 49.0234 45.875 51.4141C54.4062 53.8047 61.0625 56.4531 65.8438 59.3594C70.6719 62.2188 74.2344 65.5703 76.5312 69.4141C78.875 73.2578 80.0469 77.7812 80.0469 82.9844C80.0469 91.2812 76.8125 97.9375 70.3438 102.953C63.875 107.922 55.2266 110.406 44.3984 110.406C37.3672 110.406 30.8047 109.07 24.7109 106.398C18.6172 103.68 13.9062 99.9766 10.5781 95.2891C7.29688 90.6016 5.65625 85.2812 5.65625 79.3281H19.2266C19.2266 85.5156 21.5 90.4141 26.0469 94.0234C30.6406 97.5859 36.7578 99.3672 44.3984 99.3672C51.5234 99.3672 56.9844 97.9141 60.7812 95.0078C64.5781 92.1016 66.4766 88.1406 66.4766 83.125C66.4766 78.1094 64.7188 74.2422 61.2031 71.5234C57.6875 68.7578 51.3125 66.0391 42.0781 63.3672Z"
-                stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
             <path
                 d="M176.164 61.1172C176.164 71.1484 174.477 79.9141 171.102 87.4141C167.727 94.8672 162.945 100.562 156.758 104.5C150.57 108.438 143.352 110.406 135.102 110.406C127.039 110.406 119.891 108.438 113.656 104.5C107.422 100.516 102.57 94.8672 99.1016 87.5547C95.6797 80.1953 93.9219 71.6875 93.8281 62.0312V54.6484C93.8281 44.8047 95.5391 36.1094 98.9609 28.5625C102.383 21.0156 107.211 15.25 113.445 11.2656C119.727 7.23438 126.898 5.21875 134.961 5.21875C143.164 5.21875 150.383 7.21094 156.617 11.1953C162.898 15.1328 167.727 20.875 171.102 28.4219C174.477 35.9219 176.164 44.6641 176.164 54.6484V61.1172ZM162.734 54.5078C162.734 42.3672 160.297 33.0625 155.422 26.5938C150.547 20.0781 143.727 16.8203 134.961 16.8203C126.43 16.8203 119.703 20.0781 114.781 26.5938C109.906 33.0625 107.398 42.0625 107.258 53.5938V61.1172C107.258 72.8828 109.719 82.1406 114.641 88.8906C119.609 95.5938 126.43 98.9453 135.102 98.9453C143.82 98.9453 150.57 95.7812 155.352 89.4531C160.133 83.0781 162.594 73.9609 162.734 62.1016V54.5078Z"
-                stroke="white" stroke-width="5" />
-            <path d="M209.984 97.9609H258.5V109H196.414V6.625H209.984V97.9609Z" stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
+            <path d="M209.984 97.9609H258.5V109H196.414V6.625H209.984V97.9609Z" stroke="white" stroke-width="10" />
             <path
                 d="M331.766 61.6797H287.398V97.9609H338.938V109H273.898V6.625H338.234V17.7344H287.398V50.6406H331.766V61.6797Z"
-                stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
             <path
                 d="M389.141 45.8594L413.68 6.625H429.57L397.227 57.3906L430.344 109H414.312L389.141 69.0625L363.828 109H347.867L381.055 57.3906L348.641 6.625H364.461L389.141 45.8594Z"
-                stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
             <path
                 d="M503.891 61.6797H459.523V97.9609H511.062V109H446.023V6.625H510.359V17.7344H459.523V50.6406H503.891V61.6797Z"
-                stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
             <path
                 d="M603.172 76.5156C601.906 87.3438 597.898 95.7109 591.148 101.617C584.445 107.477 575.516 110.406 564.359 110.406C552.266 110.406 542.562 106.07 535.25 97.3984C527.984 88.7266 524.352 77.125 524.352 62.5938V52.75C524.352 43.2344 526.039 34.8672 529.414 27.6484C532.836 20.4297 537.664 14.8984 543.898 11.0547C550.133 7.16406 557.352 5.21875 565.555 5.21875C576.43 5.21875 585.148 8.26562 591.711 14.3594C598.273 20.4062 602.094 28.7969 603.172 39.5312H589.602C588.43 31.375 585.875 25.4688 581.938 21.8125C578.047 18.1562 572.586 16.3281 565.555 16.3281C556.93 16.3281 550.156 19.5156 545.234 25.8906C540.359 32.2656 537.922 41.3359 537.922 53.1016V63.0156C537.922 74.125 540.242 82.9609 544.883 89.5234C549.523 96.0859 556.016 99.3672 564.359 99.3672C571.859 99.3672 577.602 97.6797 581.586 94.3047C585.617 90.8828 588.289 84.9531 589.602 76.5156H603.172Z"
-                stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
             <path
                 d="M693.734 6.625V76.2344C693.688 85.8906 690.641 93.7891 684.594 99.9297C678.594 106.07 670.438 109.516 660.125 110.266L656.539 110.406C645.336 110.406 636.406 107.383 629.75 101.336C623.094 95.2891 619.719 86.9688 619.625 76.375V6.625H632.984V75.9531C632.984 83.3594 635.023 89.125 639.102 93.25C643.18 97.3281 648.992 99.3672 656.539 99.3672C664.18 99.3672 670.016 97.3281 674.047 93.25C678.125 89.1719 680.164 83.4297 680.164 76.0234V6.625H693.734Z"
-                stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
             <path d="M785.773 17.7344H752.867V109H739.438V17.7344H706.602V6.625H785.773V17.7344Z" stroke="white"
-                stroke-width="5" />
-            <path d="M815.445 109H801.945V6.625H815.445V109Z" stroke="white" stroke-width="5" />
+                stroke-width="10" />
+            <path d="M815.445 109H801.945V6.625H815.445V109Z" stroke="white" stroke-width="10" />
             <path
                 d="M918.945 61.1172C918.945 71.1484 917.258 79.9141 913.883 87.4141C910.508 94.8672 905.727 100.562 899.539 104.5C893.352 108.438 886.133 110.406 877.883 110.406C869.82 110.406 862.672 108.438 856.438 104.5C850.203 100.516 845.352 94.8672 841.883 87.5547C838.461 80.1953 836.703 71.6875 836.609 62.0312V54.6484C836.609 44.8047 838.32 36.1094 841.742 28.5625C845.164 21.0156 849.992 15.25 856.227 11.2656C862.508 7.23438 869.68 5.21875 877.742 5.21875C885.945 5.21875 893.164 7.21094 899.398 11.1953C905.68 15.1328 910.508 20.875 913.883 28.4219C917.258 35.9219 918.945 44.6641 918.945 54.6484V61.1172ZM905.516 54.5078C905.516 42.3672 903.078 33.0625 898.203 26.5938C893.328 20.0781 886.508 16.8203 877.742 16.8203C869.211 16.8203 862.484 20.0781 857.562 26.5938C852.688 33.0625 850.18 42.0625 850.039 53.5938V61.1172C850.039 72.8828 852.5 82.1406 857.422 88.8906C862.391 95.5938 869.211 98.9453 877.883 98.9453C886.602 98.9453 893.352 95.7812 898.133 89.4531C902.914 83.0781 905.375 73.9609 905.516 62.1016V54.5078Z"
-                stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
             <path d="M1017.88 109H1004.3L952.766 30.1094V109H939.195V6.625H952.766L1004.45 85.8672V6.625H1017.88V109Z"
-                stroke="white" stroke-width="5" />
+                stroke="white" stroke-width="10" />
         </svg>
-    </body>
+    </header>
+    <footer>
+        <details open>
+            <summary>
+                Contact
+            </summary>
+            <a class="email"
+                href="mailto:markuz@solexecution.com?&subject=Need%20for%20a%20solution&body=Hi,%0D%0DI'd%20like%20to%20get%20THIS%20done.%0D%0DTo%20be%20able%20to%20do%20WHATEVER%20I%20want.%0D%0DBest,%0D"
+                title="Email me">EMAIL</a>
+            <p class="copyrights">
+                <a href="https://solexecution.com/" class="link1">SOLEXECUTION</a> &copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+            </p>
+        </details>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174140332-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-174140332-1');
+    </script>
+
+
+</body>
+
 </html>
