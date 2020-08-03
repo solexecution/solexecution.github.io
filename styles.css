@@ -612,3 +612,12 @@ p {
         /* border: none; */
     }
 }
+ul {
+	list-style: square inside ;
+	padding: 10px;
+	margin: 10px;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 12px;
+
+  }
