@@ -19,6 +19,9 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+.std {
+	color: #bada55;
+}
 img {
 	height: 100%;
 	width: 100%;
@@ -181,14 +184,14 @@ p {
 }
 /* End Header section */
 
-/* Hero Section */
-#hero {
+/* home Section */
+#home {
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
 }
-#hero::after {
+#home::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -199,13 +202,13 @@ p {
 	opacity: .7;
 	z-index: -1;
 }
-#hero .hero {
+#home .home {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#hero h1 {
+#home h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
@@ -214,21 +217,21 @@ p {
 	animation: text_reveal .5s ease forwards;
 	animation-delay: 1s;
 }
-#hero h1:nth-child(1) {
+#home h1:nth-child(1) {
 	animation-delay: .5s;
 }
-#hero h1:nth-child(2) {
+#home h1:nth-child(2) {
 	animation-delay: 1s;
 } */
-/* #hero h1:nth-child(3) {
+/* #home h1:nth-child(3) {
 	animation: text_reveal_name .5s ease forwards;
     animation-delay: 2s;
 }
-#hero h1:nth-child(4) {
+#home h1:nth-child(4) {
 	animation: text_reveal_name .5s ease forwards;
 	animation-delay: 2.5s;
 }
-#hero h1 span {
+#home h1 span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -238,17 +241,17 @@ p {
 	animation: text_reveal_box 2s ease;
 	animation-delay: .5s;
 }
-#hero h1:nth-child(1) span {
+#home h1:nth-child(1) span {
 	animation-delay: .25s;
 }
-#hero h1:nth-child(2) span {
+#home h1:nth-child(2) span {
 	animation-delay: 1.0s; 
  }
-#hero h1:nth-child(3) span {
+#home h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
+/* End home Section */
 
 /* Services Section */
 #services .services {
@@ -261,6 +264,10 @@ p {
 #services .service-top {
 	max-width: 500px;
 	margin: 0 auto;
+	font-size: 14px;
+	text-align: left;
+
+
 }
 #services .service-bottom {
 	display: flex;
@@ -277,7 +284,6 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -487,11 +493,11 @@ p {
 		font-size: 6rem;
 	}
 
-	/* Hero */
-	#hero h1 {
+	/* home */
+	#home h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
+	/* End home */
 
 	/* Services Section */
 	#services .service-bottom .service-item {
@@ -621,3 +627,15 @@ ul {
 	font-size: 12px;
 
   }
+
+  .linkedincv-btn {
+	background-color: #0B0B0B;
+	color: #bada55;
+	border: none;
+}
+	.hire-btn {
+	background-color: #0B0B0B;
+	color: #bada55;
+	border: none;
+	font-size: 18px ;
+}
